@@ -15,6 +15,6 @@ Posterior a esto, el usuario podrá consulta su "Carrito de compra" en donde se 
 
 Una vez finalizado podrá cerrar sesión.
 
-Esta página fue realizar principalmente con el Framework Flask y se hizo uso de Bootstrap para agregar estilos.
+Esta página fue realizada principalmente con el Framework Flask y se utilizó Bootstrap para agregar estilos.
 
-Si desean pueden dejar feedback o comentarios de posibles mejoras o buenas practicas para aprender de mis errores.
+Si desean pueden dejar feedback o comentarios de posibles mejoras o buenas practicas para mejorar y aprender de mis errores.
