@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %}
+
+{% block content %}
+
+<br><br>
+
+<h1 style="text-align: center;">Bienvenido a Compra al Azar</h1>
+<p style="text-align: center;">¡Aquí Podrás comprar productos internacionales al azar de una forma fácil y directa!</p>
+
+<div class="div-center border">
+<div class="content shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+<form method="POST">
+    <h3 class="text-center">Login</h3>
+    <br>
+    <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" class="form-control" id ="email" name="email" placeholder="Ingrese su email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Clave</label>
+        <input type="password" class="form-control" id ="password" name="password" placeholder="Ingrese su clave">
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary ">Confirmar</button>
+    </div>
+
+    <br>
+
+    <a href="https://www.linkedin.com/in/jose-luis-blancom/" target="_blank">
+        <div style="text-align: right;">
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+    </a>
+
+    
+</form>
+
+</div>
+</div>
+
+{% endblock %}

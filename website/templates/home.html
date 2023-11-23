@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block content %}
+<br>
+<h1 class="text-center">Producto</h1>
+
+<div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 25rem; margin: auto; padding: 10px;">
+    
+        <img src="{{data.imagen_producto}}" class="card-img-top" alt="imagen del producto">
+        <div class="card-body">
+        <h5 class="card-title">{{ data.nombre_producto }}</h5>
+        <p class="card-text">Precio: ${{data.precio_producto}}</p>
+        
+        <form method="POST" action="{{ url_for('views.home') }}">
+        
+            <input type="hidden" name="nombre_producto" value="{{ data.nombre_producto }}">
+            <input type="hidden" name="precio_producto" value="{{ data.precio_producto }}">
+            <input type="hidden" name="imagen_producto" value="{{ data.imagen_producto }}">
+            <button type="submit" class="btn btn-primary div_botom">
+                Agregar &lt;3
+
+            </button>
+
+        </form>
+
+        <a href="{{ url_for('views.home') }}" class="btn btn-secondary div_botom">Siguiente -----&gt;</a>
+        </div>
+
+</div>
+{% endblock %}

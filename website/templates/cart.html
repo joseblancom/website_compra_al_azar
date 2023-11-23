@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}Carrito de compra{% endblock %}
+
+{% block content %}
+<br>
+<h1 class="text-center">Tu carrito de compra</h1>
+
+<div class="container-fluid text-center">
+    {% for cart in user.carts %}
+    <div style="padding: 5px; display: inline-flex;">
+    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 15rem; height: 23rem;">
+
+        <button type="button" class="close" onClick="deleteCart({{ cart.id }})">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        <img src="{{ cart.imagen_producto }}" class="image-cart" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size:12px; text-align: center;">{{ cart.nombre_producto }}</p>
+          <p class="card-text" style="text-align: center;">${{ cart.precio_producto }}</p>
+
+          
+
+        </div>
+      </div>
+    </div>
+        
+    {% endfor %}
+</div>
+{% endblock %}
